@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "type": "generic",
+            "id": "money",
+            "display_name": "Money",
+            "description": "The currency used in this world",
+            "quest_item": false
+        },
+        {
+            "type": "food",
+            "id": "banana",
+            "display_name": "Banana",
+            "description": "A yellow fruit",
+            "quest_item": false,
+            "health_increase": 10
+        },
+        {
+            "type": "generic",
+            "id": "pencil",
+            "display_name": "Pencil",
+            "description": "You can use this to write things on paper",
+            "quest_item": false
+        }
+    ]
+}

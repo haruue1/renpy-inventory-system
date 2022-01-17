@@ -16,7 +16,7 @@ label start:
     scene bg room
     show eileen happy
 
-    call load_items
+    call item_loader 
 
     $ inventory.clear()
     $ inventory.add_item(Item.money, 1000)
@@ -28,20 +28,5 @@ label start:
     "HELLO???"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    return
-
-label load_items:
-    python:
-        data = json.load(renpy.file("items.json"))
-        item_factory = ItemFactory()
-
-        item_factory.register("generic", Generic)
-        item_factory.register("food", Food)
-        
-        for item in data["items"]:
-            ITEMS[item["id"]] = item_factory.create(item) 
-
-        Item  = SimpleNamespace(**ITEMS)
 
     return

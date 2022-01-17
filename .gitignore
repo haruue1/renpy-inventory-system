@@ -5,3 +5,6 @@
 errors.txt
 log.txt
 traceback.txt
+
+saves/
+cache/

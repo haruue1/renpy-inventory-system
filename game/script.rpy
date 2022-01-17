@@ -1,11 +1,4 @@
-﻿init python:
-    import json
-    from items.factory import ItemFactory
-    from items.item import Generic, Food
-    from types import SimpleNamespace
-    from inventory.inventory import Inventory
-
-define e = Character("Eileen")
+﻿define e = Character("Eileen")
 default ITEMS = {}
 default Item = {}
 default inventory = Inventory() 

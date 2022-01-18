@@ -1,8 +1,6 @@
 from typing import Any
 from items.item import Generic
 
-from items.item import Generic
-
 
 class ItemFactory:
     def __init__(self):

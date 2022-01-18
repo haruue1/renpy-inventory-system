@@ -13,7 +13,7 @@ class InventoryItem:
 
 class Inventory:
     def __init__(self):
-        self._inventory_items = []
+        self._inventory_items: list[InventoryItem] = []
 
     def add_item(self, item: Generic, quantity: int) -> None:
         new_item = InventoryItem(item, quantity)
